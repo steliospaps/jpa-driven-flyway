@@ -1,13 +1,13 @@
-package io.github.steliospaps.example.jpa.flyway;
+package io.github.steliospaps.examples.jpa.flyway.generator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExampleJpaDrivenFlywayApplication {
+public class JpaFlywayGeneratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExampleJpaDrivenFlywayApplication.class, args);
+		SpringApplication.run(JpaFlywayGeneratorApplication.class, args);
 	}
 
 }
