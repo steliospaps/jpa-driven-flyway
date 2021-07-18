@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<jpa2ddl.version>0.10.0</jpa2ddl.version>
-		<migrations-dir>${basedir}/src/main/resources/db-migrations/</migrations-dir>
+		<migrations-dir>${basedir}/src/main/resources/db/migration/</migrations-dir>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,6 +52,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
+				<!--  https://github.com/steliospaps/jpa2ddl -->
                 <groupId>com.devskiller.jpa2ddl</groupId>
                 <artifactId>jpa2ddl-maven-plugin</artifactId>
                 <version>${jpa2ddl.version}</version>
@@ -65,7 +66,7 @@
                 </executions>
                 <configuration>
                     <packages>
-                        <package>io.github.spteliospaps.examples.jpa.flyway.generator.model</package>
+                        <package>io.github.steliospaps.examples.jpa.flyway.generator.model</package>
                     </packages>
                     <outputPath>${migrations-dir}</outputPath>
                     <action>UPDATE</action>

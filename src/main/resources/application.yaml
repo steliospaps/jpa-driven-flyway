@@ -1,0 +1,11 @@
+#spring:
+#   datasource:
+#      url: jdbc:h2:mem:test
+#flyway:
+#   url: ${spring.datasource.url}
+
+spring:
+  # see https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+  flyway:
+    # lowercase to match what jpa2dll generates lowercase v but flyway expects V
+    sql-migration-prefix: v
